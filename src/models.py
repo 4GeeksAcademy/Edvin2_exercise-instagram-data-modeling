@@ -46,7 +46,7 @@ class Comments(Base):
     post = relationship('Posts', backref='Comments')
 
     def to_dict(self):
-        return {                            ## esto se pone a cada clase?????
+        return {                            ## esto se pone a cada clase?
             'id': self.id,
             'content': self.content
         }                                   ##               
